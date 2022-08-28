@@ -16,7 +16,7 @@
 
 ## Project Description
 
-
+Este projeto tem por finalidade realizar a integração Python com API do Google Sheets.
 
 ## Functionalities
 
