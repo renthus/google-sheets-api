@@ -46,6 +46,23 @@ def main():
         result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
                                     range=SAMPLE_RANGE_NAME).execute()
         values = result.get('values', [])
+        print(values)
+
+        values = [
+            ["RENATO", "DA SILVA MALDONADO"],
+            ["TATIANA", "DA SILVA MALDONADO"],
+            ["VALENTINA", "DA SILVA MALDONADO"],
+        ]
+        body = {
+            'values': values
+        }
+        result = service.spreadsheets().values().append(
+            spreadsheetId=SAMPLE_SPREADSHEET_ID,
+            range='Página2!A1',
+            valueInputOption="USER_ENTERED",
+            body=body).execute()
+        print(f"{(result.get('updates').get('updatedCells'))} cells appended.")
+        return result
 
         if not values:
             print('No data found.')
@@ -57,6 +74,7 @@ def main():
             print('%s, %s' % (row[0], row[4]))
     except HttpError as err:
         print(err)
+
 
 
 if __name__ == '__main__':
