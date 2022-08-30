@@ -12,8 +12,8 @@ from googleapiclient.errors import HttpError
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1dYKXbjr3OYonkxe4kUawNFGm_Q2_oK3gUNo57elYLY8'
-SAMPLE_RANGE_NAME = 'Página1!B2:F13'
+SAMPLE_SPREADSHEET_ID = '1Gn7lAGFvw3zaveVkGj5uCi8dvw6unRu6fyV3ufe1nkA'
+SAMPLE_RANGE_NAME = 'Página1!A1:D13'
 
 
 def main():
@@ -58,7 +58,7 @@ def main():
         }
         result = service.spreadsheets().values().append(
             spreadsheetId=SAMPLE_SPREADSHEET_ID,
-            range='Página2!A1',
+            range=SAMPLE_RANGE_NAME,
             valueInputOption="USER_ENTERED",
             body=body).execute()
         print(f"{(result.get('updates').get('updatedCells'))} cells appended.")

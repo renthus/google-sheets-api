@@ -16,11 +16,11 @@
 
 ## Project Description
 
-Este projeto tem por finalidade realizar a integração Python com API do Google Sheets.
+This project aims to perform Python integration with Google Sheets API.
 
 ## Functionalities
 
-:heavy_check_mark: `Functionality 1:` 
+:heavy_check_mark: `Functionality 1:` Automatic inclusion in google spreadsheet
 
 ## Technologies used
 <p>
