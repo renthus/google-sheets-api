@@ -20,7 +20,7 @@ This project aims to perform Python integration with Google Sheets API.
 
 ## Functionalities
 
-:heavy_check_mark: `Functionality 1:` Automatic inclusion in google spreadsheet
+:heavy_check_mark: `Functionality 1:` Automatic inclusion in google spreadsheet.
 
 ## Technologies used
 <p>
