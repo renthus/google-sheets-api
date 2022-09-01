@@ -13,7 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
 SAMPLE_SPREADSHEET_ID = '1Gn7lAGFvw3zaveVkGj5uCi8dvw6unRu6fyV3ufe1nkA'
-SAMPLE_RANGE_NAME = 'Página1!A1:D13'
+SAMPLE_RANGE_NAME = 'Página1!A1'
 
 
 def main():
@@ -49,7 +49,7 @@ def main():
         print(values)
 
         values = [
-            ["RENATO", "DA SILVA MALDONADO"],
+            ["RENATO", "DA SILVA MALDONADO", "101010", "RENATODASILVAMALDONADO@GMAIL.COM", "ABERTURA DE CONTA"],
             ["TATIANA", "DA SILVA MALDONADO"],
             ["VALENTINA", "DA SILVA MALDONADO"],
         ]
